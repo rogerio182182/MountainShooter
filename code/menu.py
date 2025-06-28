@@ -20,11 +20,11 @@ class Menu:
 
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
-            self.menu_text( 20,"Mountain",COLOR_ORANGE,((WIN_WIDTH / 2), 30))
-            self.menu_text(20, "Shooter", COLOR_ORANGE , ((WIN_WIDTH / 2), 50))
+            self.menu_text( 50,"Mountain",COLOR_WHITE,((WIN_WIDTH / 2), 70))
+            self.menu_text(50, "Shooter", COLOR_WHITE , ((WIN_WIDTH / 2), 120))
 
             for i in range(len(MENU_OPTION)):
-                self.menu_text(8, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 70 + 20 * i))
+                self.menu_text(20, MENU_OPTION[i], COLOR_WHITE, ((WIN_WIDTH / 2), 200 + 30 * i))
 
             pygame.display.flip()
 
